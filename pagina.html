@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                 <meta charset="UTF-8">
+                 <title> Introduccion </title>
+        </head>
+<body>    
+    <h1> Hola estimad@ </h1>
+         <script>  
+         alert("Hello!!!");
+         </script>
+              <title> capitulo2 - Variables </title>  
+         <script>
+          var nombre;
+          var edad;
+          nombre = prompt("ingresa tu nombre");
+          edad = prompt("ingresa tu edad");
+          document.write(nombre +" "+ edad); //concatenar   
+        </script>  
+            <title> capitulo 3 - Tipos de datos </title>  
+            <h1> Tus amigos </h1>  
+        <script>
+                var numero = 12; //numerico - float
+                var apellido = "VacA"; // cadena de texto string
+                var amigos = ["Daniel", "Matias", "Daniely"]; //array-arreglo
+                // var objeto ={ color: "red"; size: 12; } objeto. objet
+                // null - Nan 
+        </script>  
+            <title> capitulo 4 - Arreglos </title>
+        <script>
+                document.write(amigos); 
+                //amigos [0] = "Bebe"; 
+        </script>
+             <title> capitulo 5 - Metodos y propiedades </title>
+             <h1> </h1> 
+        <script>
+            document.write("Tienes " + amigos.length + " amigos" + "<br>"); 
+            document.write(amigos.join(" ; "));
+            //var ordenado = amigos.reverse();
+            document.write("<br>" + "Invertido : "+ amigos.reverse ());             
+        </script> 
+            <title> capitulo 6 - Condicionales </title>
+            <h1> </h1>
+        <script>
+            if (nombre == "Rocio")
+            {  document.write("bienvenida " + nombre);}
+            else 
+            {  document.write("usuario diferente");}   
+        </script>
+            <title> capitulo 7 - Ciclo FOR </title>
+            <h1>CICLO FOR </h1>
+        <script>
+                for (var i = 0;i <= 10; i++)
+                { document.write("hola TU" + "<br>");}
+        </script>
+             <title> capitulo 8 - Ciclo while </title>
+             <h1>CICLO WHILE </h1>
+        <script>
+                var a = 0;
+                 while (a <= 10)
+                 { document.write(a + "<br>");
+                 a++; 
+                 }      
+        </script>
+                <title> capitulo 9 - Funcion </title>
+                <h1>Funcion </h1>
+        <script>
+                function saludo (nombre){
+                       var num1 = prompt("ingresa un numero");
+                        document.write("el numero es: " + num1);
+                }
+                saludo ();
+         </script>
+</body> 
+</html>
