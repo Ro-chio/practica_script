@@ -2,88 +2,120 @@
 <html lang="en">
         <head>
                  <meta charset="UTF-8">
-                 <title> Introduccion </title>
+                 <title> PRACTICA JAVASCRIPT </title>
         </head>
 <body>    
     <h1> Hola estimad@ </h1>
          <script>  
+            // -----> INTRODUCCION
          alert("Hello!!!");
          </script>
-              <title> capitulo2 - Variables </title>  
+
          <script>
+            //------> VARIABLES
           var nombre;
           var edad;
           nombre = prompt("ingresa tu nombre");
           edad = prompt("ingresa tu edad");
           document.write(nombre +" "+ edad); //concatenar   
         </script>  
-            <title> capitulo 3 - Tipos de datos </title>  
+        
             <h1> Tus amigos </h1>  
         <script>
+                // ------>TIPO DE DATOS
                 var numero = 12; //numerico - float
                 var apellido = "VacA"; // cadena de texto string
                 var amigos = ["Daniel", "Matias", "Daniely"]; //array-arreglo
                 // var objeto ={ color: "red"; size: 12; } objeto. objet
                 // null - Nan 
         </script>  
-            <title> capitulo 4 - Arreglos </title>
+            
         <script>
+                // ----->  ARREGLOS
                 document.write(amigos); 
                 //amigos [0] = "Bebe"; 
         </script>
-             <title> capitulo 5 - Metodos y propiedades </title>
-             <h1> </h1> 
+             
         <script>
+            // ----> METODOS Y PROPIEDADES
             document.write("Tienes " + amigos.length + " amigos" + "<br>"); 
             document.write(amigos.join(" ; "));
             //var ordenado = amigos.reverse();
             document.write("<br>" + "Invertido : "+ amigos.reverse ());             
         </script> 
-            <title> capitulo 6 - Condicionales </title>
-            <h1> </h1>
+           
         <script>
+            // -----> CONDICIONALES
             if (nombre == "Rocio")
             {  document.write("bienvenida " + nombre);}
             else 
             {  document.write("usuario diferente");}   
         </script>
-            <title> capitulo 7 - Ciclo FOR </title>
+            
             <h1>CICLO FOR </h1>
         <script>
+            // ----> CICLO FOR
                 for (var i = 0;i <= 10; i++)
                 { document.write("hola TU" + "<br>");}
         </script>
-             <title> capitulo 8 - Ciclo while </title>
+            
              <h1>CICLO WHILE </h1>
         <script>
+                // CICLO WHILE
                 var a = 0;
                  while (a <= 10)
                  { document.write(a + "<br>");
                  a++; 
                  }      
         </script>
-                <title> capitulo 9 - Funcion </title>
-                <h1>Funcion </h1>
+               
+                <h1>FUNCIONES </h1>
         <script>
+            //  ----->   FUNCIONES
                 function saludo (nombre){
                        var num1 = prompt("ingresa un numero");
                         document.write("el numero es: " + num1);
                 }
                 saludo ();
          </script>
-       <title> capitulo 10 - Formularos </title>
+      
        <h1>FORMULARIOS </h1>  
+       
          <form action="">
             <input type = "text" id= "numero1">
             <input type = "text" id= "numero2">
             <input type = "button" value= "sumar" onclick = "alert(suma(10,5));">
          </form>
          <script>
+              // ----> FORMULARIOS 
              var suma = function(numero1, numero2)
              {var numero1 = parseInt(document.getElementById("numero1").value);
               var numero2 = parseInt(document.getElementById("numero2").value);
               var resultado = numero1 +numero2;
               return resultado;}
          </script>
+         <script>
+            // ----> SCOPE 
+       var variableglobal = "es global";
+       var variablef = function (){
+           var variablelocal ="es local";
+           alert (variablelocal);
+       } 
+       variablef ();
+       // ---- > METODOS DE CADENA DE TEXTO
+        var texto = "Rocio Soledad";
+        var ntexto = texto.length;
+        document.write("<br>" + texto );
+        document.write("<br> tiene " + ntexto + "caracteres");
+        document.write("<br> corta 7 caracteres--> " + texto.substring (7));
+        document.write("<br> mostrara los caracteres 0 al 5 -->" + texto.substr (0,5));
+        document.write("<br> mostrar el numero de posicion de a --> " + texto.indexOf ("a"));
+        document.write("<br> mostrar el numero de posicion de i de atras a adelante --> " + texto.lastIndexOf ("i"));
+        document.write("<br> reemplaza Rocio --> " + texto.replace ("Rocio", "chio"));
+        document.write("<br> mostrar en mayusculas --> " + texto.toUpperCase ());
+        document.write("<br> mostrar en minusculas --> " + texto.toLowerCase ());
+    
+    </script>
+
 </body> 
 </html>
