@@ -3,6 +3,7 @@
         <head>
                  <meta charset="UTF-8">
                  <title> PRACTICA JAVASCRIPT </title>
+                 <link rel="stylesheet" href="estilo.css">
         </head>
 <body>    
     <h1> Hola estimad@ </h1>
@@ -17,15 +18,15 @@
           var edad;
           nombre = prompt("ingresa tu nombre");
           edad = prompt("ingresa tu edad");
-          document.write(nombre +" "+ edad); //concatenar   
+          document.write(nombre +" "+ edad);  //concatenar   
         </script>  
         
-            <h1> Tus amigos </h1>  
+            <h3> Tus amigos </h3>  
         <script>
                 // ------>TIPO DE DATOS
                 var numero = 12; //numerico - float
                 var apellido = "VacA"; // cadena de texto string
-                var amigos = ["Daniel", "Matias", "Daniely"]; //array-arreglo
+                 var amigos = ["Daniel", "Matias", "Daniely"];//array-arreglo
                 // var objeto ={ color: "red"; size: 12; } objeto. objet
                 // null - Nan 
         </script>  
@@ -116,6 +117,23 @@
         document.write("<br> mostrar en minusculas --> " + texto.toLowerCase ());
     
     </script>
+        <h1>Document Objet Model  - acceder a elemetos</h1>
+        <div id= "uno"></div>
+        <p class="azul"> 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi nobis obcaecati corrupti eaque modi rem corporis distinctio minima. Non amet quas doloribus iste sed, expedita quae libero quia dolorum?</p>
+        <p class="amarillo" > 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nulla aperiam aut incidunt porro perferendis nemo, eaque itaque rerum doloremque, alias dolore eos architecto sint laborum voluptatum nobis praesentium beatae?</p>
+        <p class="rojo">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat cumque, reprehenderit ipsam libero expedita atque consequatur suscipit unde, aspernatur quisquam et voluptates eos necessitatibus. Debitis voluptatum suscipit amet architecto?</p>
+        <h1> Nodos- crea nuevo elemnto</h1>
+        <script>
+        //var elementosp = document.getElementsByTagName("p"); //usado por lado del usuario
+        //var elementosp =document.getElementById ("dos");
+        
+        var elemento = document.createElement("h2");
+        var contenido = document.createTextNode("nuevo elemento");
+        elemento.appendChild(contenido);
+        elemento.setAttribute("algin", "center");
+       // document.getElementById("uno").appendChild(elemento);
+        document.body.appendChild(elemento);
+        </script>
 
 </body> 
 </html>
