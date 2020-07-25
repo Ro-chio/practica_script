@@ -122,7 +122,7 @@
         <p class="azul"> 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi nobis obcaecati corrupti eaque modi rem corporis distinctio minima. Non amet quas doloribus iste sed, expedita quae libero quia dolorum?</p>
         <p class="amarillo" > 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nulla aperiam aut incidunt porro perferendis nemo, eaque itaque rerum doloremque, alias dolore eos architecto sint laborum voluptatum nobis praesentium beatae?</p>
         <p class="rojo">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat cumque, reprehenderit ipsam libero expedita atque consequatur suscipit unde, aspernatur quisquam et voluptates eos necessitatibus. Debitis voluptatum suscipit amet architecto?</p>
-        <h1> Nodos- crea nuevo elemnto</h1>
+        <h1> Nodos- crea nuevo elemnto mediante js</h1>
         <script>
         //var elementosp = document.getElementsByTagName("p"); //usado por lado del usuario
         //var elementosp =document.getElementById ("dos");
@@ -134,6 +134,22 @@
        // document.getElementById("uno").appendChild(elemento);
         document.body.appendChild(elemento);
         </script>
+        <h1> Crear elemento en lista </h1>
+        <ol id = "lista">
+            <li> Primera  fila</li>
+            <li> Segunto  fila</li>
+        </ol>
+        <script>
+            var elemento = document.createElement("li");
+            contenido = document.createTextNode("ingresa nuevo elemento");
+            elemento. appendChild (contenido);
+            
+            var padre = document.getElementsByTagName("li")[0].parentNode;
+            primerelemento = document.getElementsByTagName("li")[0];
+           // padre.appendChild(elemento); // al final de la lista
+           padre.insertBefore(elemento, primerelemento);
+        </script>
+
 
 </body> 
 </html>
