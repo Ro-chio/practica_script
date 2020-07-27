@@ -1,7 +1,40 @@
 h1{ 
-    color: #b1e22b;
-    font-size: 50 px;}
+    color: #5a26ad;
+    font-size: 50 px;
+  }
 .azul { color: #0f2dd3; font-size: 50 px;}
 .amarillo {color: #e2d62b; font-size: 50 px;}
 .rojo {color: #df3011; font-size: 50 px;}
+
+div {
+    width: 200px;
+    height: 200px;
+    background: #df3011;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #0f2dd3;
+}
+.verde {
+    background: #056d24;
+    border: 1px solid #000;
+}
+.cafe {
+    background: #584204;
+    border: 1px solid #000; 
+}
+.thumb {
+    width: 200px;
+    transition: 300ms all ease; 
+}
+.grande {
+    width: 400px;
+}
+.titulo {
+    border: 1px solid navy;
+    background: #19afa7;
+    padding: 10px;
+}
+.titulogrande {
+    font-size: 60px;
+}
 
