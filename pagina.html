@@ -224,6 +224,39 @@
                     formulario.addEventeListener("submit", validar);
                    }   
             </script>
+            <h1> Timers, Timeout e Interval</h1>
+            <h2> ejecuta funciones por un tiempo determinado</h2>
+            <script>
+                    var contador = 1;
+                    var saludo = function(){
+                        document.write(contador);
+                        contador++;
+                        //console.log ("saludo!!!");
+                        if(contador === 6){
+                            clearInterval(intervalo);
+                        }                       
+                    }
+                    //setTimeout(saludo,1000);
+                   // var intervalo = setInterval(saludo, 3000); 
+            
+            </script>
+            <h1> Fecha </h1>
+            <script>
+                
+                 var fecha = new Date();
+                document.write (fecha);
+                // otener hora munitos y segundos en consola
+                console.log(fecha.getHours());
+                console.log(fecha.getMinutes());
+                console.log(fecha.getSeconds());
+           
+                // obtener  el dia fecha mes y año en consola
+                console.log(fecha.getDay());
+                console.log(fecha.getDate());
+                console.log(fecha.getMonth());
+                console.log(fecha.getFullYear());
+                </script>
+            
         </form>
 </body> 
 </html>
